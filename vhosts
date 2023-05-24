@@ -1,0 +1,23 @@
+############################################################################
+#This should be the ip address of the targer host to be patch and mbss     #
+#You may add multiple of unix environment for any multiple processes       #
+# Only for Images Platform                                                 #
+############################################################################
+#Do not modify this part as this is the authentication method for any connectivity and process to sucessfully run the script.
+# If you want to update the credentials. Please do read the IG or README File.
+
+[vpc]
+localhost
+
+[vpc:vars]
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_port=22
+ansible_user="{{ansible_user_lin}}"
+ansible_password="{{ansible_password_lin}}"
+ansible_become=true
+
+#################################
+#ITIO-EE-Platforms-Infra-Image  #
+# Mike Cabanto                  #
+#################################
+
