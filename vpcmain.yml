@@ -1,0 +1,8 @@
+---
+- name: Unix Server Patching (Virtual Private Cloud)
+  hosts: vpc
+  #become: true
+  #become_user: "{{ ansible_user_lin }}"
+  #become_method: sudo
+  roles:
+    -  vpcroles
