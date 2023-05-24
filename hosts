@@ -1,0 +1,31 @@
+[lin]
+
+#AWS Bastion
+
+#VPC
+#10.46.178.252
+#10.46.172.54 #RHEL8.5 REPO
+#10.71.178.167 #RHEL7.9
+10.71.178.166 #Ubuntu18.x
+10.71.178.240 #Ubuntu20.x
+
+#AZURE
+#10.61.4.110 #Rhel8.5 REPO
+#10.61.4.14 #RHEL7.9
+#10.61.4.95 #Ubunt18.x
+#10.61.4.87 #Ubuntu20.x
+
+#AWS Environment
+#10.60.4.126 #RHEL8.6 Repository
+#10.60.3.49 #RHEL8.5 Repository
+#10.60.1.159 #ubuntu18
+#10.60.1.137 #ubuntu20
+#10.60.1.140 #rhel7.9
+
+
+
+[lin:vars]
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_port=22
+ansible_user="{{ansible_user_lin}}"
+ansible_password="{{ansible_password_lin}}"
